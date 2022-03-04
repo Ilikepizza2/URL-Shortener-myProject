@@ -18,7 +18,7 @@ nav{
 }
 nav > a,nav > button{
     margin: 20px;
-    font-size: 1.2em;
+    font-size: 1.0em;
 }
 #login{
     margin-left: auto;
@@ -122,6 +122,38 @@ nav > a:hover{
 .p2{
     color: var(--light);
 }
+.weird{
+    display: flex;
+    justify-content: space-around;
+    padding: 150px 100px;
+    position: relative;
+}
+.weird > div{
+    background-color: white;
+    border-radius: 10px;
+    width: 25%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    position: relative;
+}
+.div1{
+    top: -20%;
+}
+.weird > div >h2{
+    font-size: 1.2em;
+}
+.weird > div >p{
+    color: var(--light);
+    line-height: 1.8em;
+}
+.weird > div >div{
+    border-radius: 50%;
+    background-color: var(--shorten);
+    padding: 15px;
+    top: -18%;
+    position: absolute;
+}
 .boost{
     background-image: url(images/bg-boost-desktop.svg);
     background-size: cover;
@@ -132,7 +164,7 @@ nav > a:hover{
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding: 4%;
+    padding: 2.5%;
 }
 footer{
     background-color: var(--dark);
