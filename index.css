@@ -90,7 +90,7 @@ nav > a:hover{
     margin: 0vw 8vw;
     padding: 2%;
     background-color: var(--shorten);
-    background-image: url(/URL-Shortener-myProject/images/bg-shorten-desktop.svg);
+    background-image: url(images/bg-shorten-desktop.svg);
     background-size: cover;
     border-radius: 10px;
     top: -10%;
@@ -123,7 +123,7 @@ nav > a:hover{
     color: var(--light);
 }
 .boost{
-    background-image: url(/URL-Shortener-myProject/images/bg-boost-desktop.svg);
+    background-image: url(images/bg-boost-desktop.svg);
     background-size: cover;
     background-color: var(--shorten);
     display: flex;
