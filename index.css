@@ -26,7 +26,7 @@ nav > a,nav > button{
     font-size: 2.3em;
     color: var(--dark);
 }
-nav > a{
+a{
     text-decoration: none;
     color: var(--light);
     align-self: center;
@@ -46,27 +46,30 @@ nav > a:hover{
 .more{
     margin-top: 120px;
     margin-left: 100px;
-    font-size: 4em;
     width: fit-content;
+    margin-bottom: 100px;
+}
+.h11{
+    font-size: 4.9em;
     color: var(--dark);
 }
 .p1{
     width: fit-content;
-    font-size: 1.2em;
-    margin-left: 100px;
-    margin-top: -30px;
+    font-size: 1em;
+    /* margin-left: 100px; */
+    margin-top: -45px;
     color: var(--light);
 }
 #gstarted{
     background-color:var(--aq);
     border: 0px;
     color: white;
-    padding: 10px 40px;
-    font-size: 1.2em;
+    padding: 12px 20px;
+    font-size: 1em;
     font-weight: 800;
     border-radius: 28px;
-    margin-left: 100px;
-    margin-bottom: 110px;
+    width: fit-content;
+    /* margin-bottom: 110px; */
 }
 .page2{
     background-color: var(--pg2col);
@@ -78,7 +81,7 @@ nav > a:hover{
     padding: 2%;
     background-color: var(--shorten);
     background-image: url(/URL-Shortener-myProject/images/bg-shorten-desktop.svg);
-    background-size: 100%;
+    background-size: cover;
     border-radius: 10px;
     top: -10%;
     position: absolute;
@@ -109,3 +112,30 @@ nav > a:hover{
 .p2{
     color: var(--light);
 }
+.boost{
+    background-image: url(/URL-Shortener-myProject/images/bg-boost-desktop.svg);
+    background-size: cover;
+    background-color: var(--shorten);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+footer{
+    background-color: var(--dark);
+    color: white;
+    padding: 0% 10%;
+}
+.footerele{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+}
+.col2, .col3, .col4{
+    display: flex;
+    flex-direction: column;
+    
+}
+
