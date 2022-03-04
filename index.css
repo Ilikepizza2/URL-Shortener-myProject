@@ -4,6 +4,7 @@
     --light: #9a9fae;
     --pg2col: #f0f1f6;
     --shorten: #3b2f53;
+    --whitebet: rgba(255, 255, 255, 0.918);
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -30,6 +31,7 @@ a{
     text-decoration: none;
     color: var(--light);
     align-self: center;
+    transition: color 0.3s;
 }
 nav > a:hover{
     color: var(--dark);
@@ -37,17 +39,16 @@ nav > a:hover{
 #signup{
     background-color:var(--aq);
     border: 0px;
-    color: white;
+    color: var(--whitebet);
     padding: 10px 20px;
     font-size: 1.2em;
     font-weight: 800;
     border-radius: 28px;
 }
 .more{
-    margin-top: 120px;
+    margin-top: 80px;
     margin-left: 100px;
     width: fit-content;
-    margin-bottom: 100px;
 }
 .h11{
     font-size: 4.9em;
@@ -60,13 +61,22 @@ nav > a:hover{
     margin-top: -45px;
     color: var(--light);
 }
+.first{
+    display: flex;
+    margin-bottom: 100px;
+}
+.first > img{
+    width: 600px;
+    height: calc(600px*482/733);
+    margin-left: auto;
+}
 #gstarted{
     background-color:var(--aq);
     border: 0px;
-    color: white;
+    color: var(--whitebet);
     padding: 12px 20px;
     font-size: 1em;
-    font-weight: 800;
+    /* font-weight: 800; */
     border-radius: 28px;
     width: fit-content;
     /* margin-bottom: 110px; */
@@ -87,20 +97,20 @@ nav > a:hover{
     position: absolute;
 }
 .page2 .shorten > input{
-    width: 75%;
+    width: 84%;
     padding: 1%;
     border-radius: 5px;
     border: 0px;
 }
 .page2 .shorten > button{
     margin-left: 2%;
-    width: 22%;
-    color: white;
+    width: 12%;
+    color: var(--whitebet);
     background-color: aqua;
     border: 0px;
     border-radius: 5px;
     padding: 15px 40px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 800;
 }
 .adv{
@@ -118,10 +128,11 @@ nav > a:hover{
     background-color: var(--shorten);
     display: flex;
     flex-direction: column;
-    color: white;
+    color: var(--whitebet);
     justify-content: center;
     text-align: center;
     align-items: center;
+    padding: 4%;
 }
 footer{
     background-color: var(--dark);
@@ -138,4 +149,27 @@ footer{
     flex-direction: column;
     
 }
-
+.col2 > a, .col3 > a, .col4 > a{
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+.col2 > a:hover, .col3 > a:hover, .col4 > a:hover{
+    color: var(--aq);
+}
+.footnote{
+    text-align: center;
+    padding-top: 70px;
+    font-size: 0.8em;
+    padding-bottom: 20px;
+}
+.social{
+    padding-top: 20px;
+}
+.social > img{
+    margin-left: 60px;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 80%;
+    transition: opacity 0.3s;
+}
