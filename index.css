@@ -93,7 +93,7 @@ nav > a:hover{
     background-image: url(images/bg-shorten-desktop.svg);
     background-size: cover;
     border-radius: 10px;
-    top: -10%;
+    top: -4.5%;
     position: absolute;
 }
 .page2 .shorten > input{
@@ -112,6 +112,12 @@ nav > a:hover{
     padding: 15px 40px;
     font-size: 1.1em;
     font-weight: 800;
+}
+.links{
+    width: 100vw;
+    height: 400px;
+    /* background-color: black; */
+    color: black;
 }
 .adv{
     padding-top: 120px;
