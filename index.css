@@ -126,7 +126,7 @@ nav > a:hover{
 }
 #error{
     color: red;
-    font-size: 130%;
+    font-size: 110%;
     position: absolute;
     bottom: -15px;
 }
