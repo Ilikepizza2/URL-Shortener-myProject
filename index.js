@@ -1,8 +1,9 @@
 var shortlink;
 var shorturl=document.getElementById("shorturl");
-console.log(url)
+// console.log(url)
 function generate(){
-  
+  document.getElementById("text").style.border="0px";
+  document.getElementById("error").style.visibility="hidden";
   short();
   dateTime();
 }
@@ -14,41 +15,49 @@ function dateTime(){
   document.getElementById("time").textContent="Today at "+time;
 }
 function short(){
-  var url="https://api.shrtco.de/v2/shorten?url="+document.getElementById("text").value;
-  document.getElementById("links").style.visibility="visible"
+  var textValue=document.getElementById("text").value;
+  if(textValue!="undefined")
+  var url="https://api.shrtco.de/v2/shorten?url="+textValue;
+  else
+  var url = "https://api.shrtco.de/v2/shorten?url=";
+  
   fetch(url)
   .then(function (response) {
     return response.json();
   })
   .then(function (data) {
-    shortlink = data.result.short_link;
-    // console.log(shortlink)
+    
     if(data.ok!=false){
+      document.getElementById("links").style.visibility="visible"
+      shortlink = data.result.short_link;
+      // console.log(shortlink)
+      console.log(data)
       document.getElementById("ogurl").textContent=document.getElementById("text").value;
       shorturl.textContent=shortlink;
       shorturl.setAttribute("href","https://www."+shortlink)
     }
     else{
-      error(error_code);
+      error(data.error_code);
+      console.log(data.error_code)
     }
     
 
   })
 }
 function error(e){
-  document.getElementById("text").style.border="1px red solid";
-  document.getElementById("text").style.color="red";
-  document.getElementById("text").setAttribute("value","");
+  document.getElementById("text").style.border="3px red solid";
+  // document.getElementById("text").style.color="red";
+  document.getElementById("error").style.visibility="visible";
   if(e==1)
-  document.getElementById("text").setAttribute("value","No URL given.")
+  document.getElementById("error").textContent=("No URL given.")
   else if(e==2)
-  document.getElementById("text").setAttribute("value","Invalid URL.")
+  document.getElementById("error").textContent=("Invalid URL.")
   else if(e==3)
-  document.getElementById("text").setAttribute("value","Rate limit reached. Wait a second and try again.")
+  document.getElementById("error").textContent=("Rate limit reached. Wait a second and try again.")
   else if(e==10)
-  document.getElementById("text").setAttribute("value","Disallowed Link.")
+  document.getElementById("error").textContent=("Disallowed Link.")
   else
-  document.getElementById("text").setAttribute("value","Unhandled Error.")
+  document.getElementById("error").textContent=("Unhandled Error.")
 }
 function copy(){
   document.getElementById("copy").innerText="Copied"
@@ -58,4 +67,3 @@ function dele(){
   document.getElementById("links").style.visibility="hidden";
 }
 //   console.log(shortlink)
-document.getElementById("hello").innerHTML
