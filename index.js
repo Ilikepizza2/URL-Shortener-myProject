@@ -51,6 +51,7 @@ function error(e){
   document.getElementById("text").setAttribute("value","Unhandled Error.")
 }
 function copy(){
+  document.getElementById("copy").innerText="Copied"
   navigator.clipboard.writeText(shortlink);
 }
 function dele(){
