@@ -106,7 +106,7 @@ nav > a:hover{
     margin-left: 2%;
     width: 12%;
     color: var(--whitebet);
-    background-color: aqua;
+    background-color: var(--aq);
     border: 0px;
     border-radius: 5px;
     padding: 15px 40px;
@@ -118,6 +118,54 @@ nav > a:hover{
     height: 400px;
     /* background-color: black; */
     color: black;
+    visibility:hidden;
+}
+#recent{
+    background-color: var(--pg2col);
+}
+.recenthead{
+    margin-top: 50px;
+    margin-left: -2vw;
+}
+#shorturl{
+    margin-left: auto;
+    margin-right: 30px;
+    color: var(--aq);
+}
+#copy{
+    width: 130px;
+    height: 40px;
+    margin-right: 30px;
+    background-color: var(--aq);
+    color: white;
+    border: 0px;
+    border-radius: 8px;
+}
+.links > div{
+    background-color: white;
+    width: 78vw;
+    height: 40px;
+    margin: 0vw 8vw;
+    margin-top: 30px;
+    padding: 2%;
+    color: black;
+    background-size: cover;
+    border-radius: 10px;
+}
+#delete{
+    width: 30px;
+    height: 30px;
+}
+#delete:hover{
+    cursor: pointer;
+}
+.link1{
+    display: flex;
+    align-items: center;
+}
+#time{
+    font-style: italic;
+    color: var(--light);
 }
 .adv{
     padding-top: 120px;

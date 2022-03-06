@@ -26,14 +26,23 @@
         
         <div class="page2">
             <div class="shorten">
-                <input type="text" name="text" id="text" placeholder="Shorten a link here...">
-                <button>Shorten It!</button>
+                <input type="text" id="text" placeholder="Shorten a link here...">
+                <button onclick="generate()">Shorten It!</button>
             </div>
-            <div class="links">
-                <p class="recenthead">Recent links</p>
+            <div class="links" id="links">
+                <div id="recent">
+                    <p class="recenthead">Recent links</p>
+                </div>
+                
                 <div class="link1">
-                    <p class="ogurl"></p>
-                    <p class="time"></p>
+                    <div class="ele1">
+                        <p id="ogurl"></p>
+                        <p id="time"></p>
+                    </div>
+                    <!-- <p id="shorturl"></p> -->
+                    <a href="#" id="shorturl"></a>
+                    <button id="copy" onclick="copy()">Copy</button>
+                    <img src="images/bin.png" alt="" id="delete" onclick="dele()">
                 </div>
             </div>
             <div class="adv">
